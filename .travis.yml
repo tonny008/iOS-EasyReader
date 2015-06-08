@@ -1,7 +1,6 @@
-
 language: objective-c
-before_install:
-  - pod repo add cloudspace https://github.com/cloudspace/Cloudspace-iOS-PodSpecs.git
+osx_image: beta-xcode6.3
+
 script:
   - xctool -workspace EasyReader.xcworkspace -scheme Development -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
   - xctool test -workspace EasyReader.xcworkspace -scheme Development -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
