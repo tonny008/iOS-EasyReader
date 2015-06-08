@@ -2,7 +2,7 @@ language: objective-c
 osx_image: beta-xcode6.3
 
 script:
-  - xctool -workspace EasyReader.xcworkspace -scheme Development -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace EasyReader.xcworkspace -scheme Development -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
+  - xctool -workspace EasyReader.xcworkspace -scheme Development -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace EasyReader.xcworkspace -scheme Development -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 notifications:
   slack: cloudspace:euw2TezwiQfK9ebqBtGa1Rjz
