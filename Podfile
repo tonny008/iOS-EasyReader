@@ -24,9 +24,8 @@ pod 'NSDate+TimeAgo', '~> 1.0.2'
 
 # User notification
 pod 'SVProgressHUD', '~> 1.0'
-pod 'TSMessages', '~> 0.9'
 pod 'NJKWebViewProgress', '~> 0.2'
-
+pod 'TSMessages', '~>0.9.12'
 
 # Image caching and processing
 pod 'SDWebImage', '~> 3.7.1'
@@ -52,6 +51,3 @@ target :'EasyReader - Unit Tests', exclusive: true do
   pod 'OCMock', '~> 2.2.2'
 end
 
-target :Staging do
-  pod 'TestFlightSDK', '~> 2.2.0-noadid-beta'
-end
