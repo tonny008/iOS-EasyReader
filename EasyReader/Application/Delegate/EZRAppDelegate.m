@@ -14,7 +14,6 @@
 #import "EZRCoreDataService.h"
 #import "EZRFeedUpdateService.h"
 #import "EZRApplicationStyleService.h"
-#import "EZRTestFlightService.h"
 #import "EZRGoogleAnalyticsService.h"
 
 #import "User.h"
