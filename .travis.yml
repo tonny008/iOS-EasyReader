@@ -1,6 +1,9 @@
 language: objective-c
 osx_image: beta-xcode6.3
 
+
+before_install:
+  - pod install
 script:
   - xctool -workspace EasyReader.xcworkspace -scheme Development -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   - xctool test -workspace EasyReader.xcworkspace -scheme Development -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
